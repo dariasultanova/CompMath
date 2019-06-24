@@ -9,7 +9,7 @@ int main() {
 	double C[dim][dim], Ct[dim][dim], CtC[dim][dim];
 	double d[dim], d1[dim];
 	int ipvt[dim];
-	double cond, sigma;
+	double cond, delta;
 	double m = 1, n = 1;
 
 	for (int i = 0; i < dim; i++) {
@@ -98,8 +98,8 @@ int main() {
 		s2 = pow((d[i] - d1[i]), 2) + s2;
 	}
 	s1 = sqrt(s1); s2 = sqrt(s2);
-	sigma = s2 / s1;
-	printf("sigma = %e\n\n", sigma);
+	delta = s2 / s1;
+	printf("delta = %e\n\n", delta);
 	printf("===============================================================================\n");
 
 	// n = 6
@@ -107,7 +107,7 @@ int main() {
 	double C1[dim1][dim1], Ct1[dim1][dim1], CtC1[dim1][dim1];
 	double d_1[dim1], d1_1[dim1];
 	int ipvt1[dim1];
-	double cond1, sigma1;
+	double cond1, delta1;
 	double m1 = 1, n1 = 1;
 
 	for (int i = 0; i < dim1; i++) {
@@ -197,8 +197,8 @@ int main() {
 	}
 	s1_1 = sqrt(s1_1);
 	s2_1 = sqrt(s2_1);
-	sigma1 = s2_1 / s1_1;
-	printf("sigma = %e\n\n", sigma1);
+	delta1 = s2_1 / s1_1;
+	printf("delta = %e\n\n", delta1);
 	printf("===============================================================================\n");
 
 	// n = 8
@@ -206,7 +206,7 @@ int main() {
 	double C2[dim2][dim2], Ct2[dim2][dim2], CtC2[dim2][dim2];
 	double d_2[dim2], d1_2[dim2];
 	int ipvt2[dim2];
-	double cond2, sigma2;
+	double cond2, delta2;
 	double m2 = 1, n2 = 1;
 
 	for (int i = 0; i < dim2; i++) {
@@ -296,8 +296,8 @@ int main() {
 	}
 	s1_2 = sqrt(s1_2);
 	s2_2 = sqrt(s2_2);
-	sigma2 = s2_2 / s1_2;
-	printf("sigma = %e\n\n", sigma2);
+	delta2 = s2_2 / s1_2;
+	printf("delta = %e\n\n", delta2);
 	printf("===============================================================================\n");
 
 	// n = 10
@@ -305,7 +305,7 @@ int main() {
 	double C3[dim3][dim3], Ct3[dim3][dim3], CtC3[dim3][dim3];
 	double d_3[dim3], d1_3[dim3];
 	int ipvt3[dim3];
-	double cond3, sigma3;
+	double cond3, delta3;
 	double m3 = 1, n3 = 1;
 
 	for (int i = 0; i < dim3; i++) {
@@ -395,8 +395,8 @@ int main() {
 	}
 	s1_3 = sqrt(s1_3);
 	s2_3 = sqrt(s2_3);
-	sigma3 = s2_3 / s1_3;
-	printf("sigma = %e\n\n", sigma3);
+	delta3 = s2_3 / s1_3;
+	printf("delta = %e\n\n", delta3);
 	printf("===============================================================================\n");
 
 	// n = 12
@@ -404,7 +404,7 @@ int main() {
 	double C4[dim4][dim4], Ct4[dim4][dim4], CtC4[dim4][dim4];
 	double d_4[dim4], d1_4[dim4];
 	int ipvt4[dim4];
-	double cond4, sigma4;
+	double cond4, delta4;
 	double m4 = 1, n4 = 1;
 
 	for (int i = 0; i < dim4; i++) {
@@ -495,8 +495,8 @@ int main() {
 	}
 	s1_4 = sqrt(s1_4);
 	s2_4 = sqrt(s2_4);
-	sigma4 = s2_4 / s1_4;
-	printf("sigma = %e\n\n", sigma4);
+	delta4 = s2_4 / s1_4;
+	printf("delta = %e\n\n", delta4);
 
 	system("pause");
 }
